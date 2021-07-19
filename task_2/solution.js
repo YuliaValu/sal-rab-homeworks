@@ -9,7 +9,7 @@ function calcShipping(sum, min, shipping) {
     let shippingSum;
     // если productsSum равно 0,
     // то shippingSum присвоить значение 0
-    
+
     // если productsSum Больше или равна freeShippingMinSum,
     // то shippingSum присвоить значение 0
     
@@ -63,8 +63,8 @@ function calcInvoice({sum, discountMinSum, discountPart, shippingFreeMinSum, shi
     // запишите без использования if или любых других условий:
     // если shippingSum равно нулю, то freeShipping должна быть равна true, иначе freeShipping должна быть равна false
     let freeShipping;
-    
-    
+    let shippingSum=0;
+    console.log(Boolean(freeShipping));
     // Конец решения задачи №2.3.
 
     return {discount: discountSum, freeShipping, shipping: shippingSum, total: totalSum};
