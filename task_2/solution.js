@@ -6,16 +6,16 @@ function calcShipping(sum, min, shipping) {
     // Задание №2.1. Рассчитать доставку
 
     // создайте переменную shippingSum
-    let shippingSum
+    let shippingSum;
     // если productsSum равно 0,
     // то shippingSum присвоить значение 0
-    if (productsSum == 0) { shippingSum = 0 }
+    if (productsSum == 0) { shippingSum = 0 };
     // если productsSum Больше или равна freeShippingMinSum,
     // то shippingSum присвоить значение 0
-    if (productsSum >= freeShippingMinSum) { shippingSum = 0 }
+    if (productsSum >= freeShippingMinSum) { shippingSum = 0 };
     // если productsSum больше 0 и меньше freeShippingMinSum,
     // то shippingSum присвоить значение shippingPrice
-    if( productsSum > 0 || productsSum < freeShippingMinSum) {shippingSum = shippingPrice }
+    if( productsSum > 0 || productsSum < freeShippingMinSum) {shippingSum = shippingPrice };
 
     // Конец решения задания №2.1.
 
@@ -60,8 +60,8 @@ function calcInvoice({sum, discountMinSum, discountPart, shippingFreeMinSum, shi
     // создайте переменную freeShipping
     // запишите без использования if или других условий:
     // если shippingSum равно нулю, то freeShipping должна быть равна true, иначе freeShipping должна быть равна false
-    let freeShipping=shippingSum === 0
-    console.log(!Boolean(freeShipping));
+    let freeShipping=shippingSum === 0;
+    console.log ( Boolean.map(freeShipping));
     // Конец решения задачи №2.3.
 
     return {discount: discountSum, freeShipping, shipping: shippingSum, total: totalSum};
