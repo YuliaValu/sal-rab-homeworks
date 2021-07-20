@@ -6,7 +6,7 @@ function calcShipping(sum, min, shipping) {
     // Задание №2.1. Рассчитать доставку
 
     // создайте переменную shippingSum
-    let shippingSum;
+    let shippingSum
     // если productsSum равно 0,
     // то shippingSum присвоить значение 0
     if (productsSum == 0) { shippingSum = 0 }
@@ -60,7 +60,7 @@ function calcInvoice({sum, discountMinSum, discountPart, shippingFreeMinSum, shi
     // создайте переменную freeShipping
     // запишите без использования if или других условий:
     // если shippingSum равно нулю, то freeShipping должна быть равна true, иначе freeShipping должна быть равна false
-    let freeShipping=shippingSum === 0;
+    let freeShipping=shippingSum === 0
     console.log(!Boolean(freeShipping));
     // Конец решения задачи №2.3.
 
