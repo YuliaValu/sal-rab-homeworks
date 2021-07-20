@@ -16,7 +16,6 @@ function parseProducts(json) {
 
 // Напишите функцию renderProductsCards(json)
 // Аргументом функции является JSON
-renderProductsCards(json);
 function renderProductsCards(json){
     clearProducts();
     let products;
