@@ -50,7 +50,7 @@ function sendRequest(name, phone, address, goods, sum) {
 
     data.client = 'Иван';
 
-    let jsonData = JSON.stringify({data});
+    let jsonData = JSON.stringify(data);
 
     return jsonData;
 }
