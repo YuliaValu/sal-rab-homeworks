@@ -39,16 +39,16 @@ function sendRequest(name, phone, address, goods, sum) {
         order: {address: "ул. Ленина, дом 2, 4 подъезд, 5 этаж, кв 53", sum:900},
         goods: [{title:"Пицца", count:2}]
     };
-    
+
     let countOfGoods = goods.length;
 
     for (let i = 0; i <= countOfGoods; i += 1) {
         data.goods.push(goods[i].title);
     }
-    
+
     data.order.address = address;
     data.order.sum = name + phone + address + goods + sum;
-    data.goods.title = "Пицца";
+    data.goods.title = title;
     data.goods.count = 2 ;
 
     data.client = "Иван";
