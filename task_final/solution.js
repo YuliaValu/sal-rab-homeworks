@@ -47,5 +47,6 @@ function sendRequest(name, phone, address, goods, sum) {
     let dataForSend= {data:data};
     let jsonData = JSON.stringify(dataForSend);
     return jsonData;
+    
     }
     
